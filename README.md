@@ -6,7 +6,7 @@ This project focuses on automatic image colorization using a Generative Adversar
 
 |         Grayscale Input          |         True Color Image          |      Predicted Color Image       |
 | :------------------------------: | :-------------------------------: | :------------------------------: |
-| ![Grayscale](Ref\Gray_image.png) | ![True Color](Ref\Real_image.png) | ![Predicted](Ref\Pred_image.png) |
+| ![Grayscale](Ref/Gray_image.png) | ![True Color](Ref/Real_image.png) | ![Predicted](Ref/Pred_image.png) |
 
 ## Dataset
 
@@ -37,7 +37,7 @@ The generator is built using a combination of a **ResNet-101 backbone** (pre-tra
 
 The discriminator is designed to classify whether the generated color image is real or fake by comparing the grayscale and color images. This model uses a **PatchGAN** approach, which classifies small patches of the image as real or fake, rather than the entire image. This helps the network focus on local structures, improving the quality of generated images.
 
-![PatchGAN Concept](Ref\Patchgan.png)
+![PatchGAN Concept](Ref/Patchgan.png)
 
 ### Training Strategy
 
@@ -53,7 +53,7 @@ The model's progress is visually tracked during training by comparing the predic
 
 Below are some examples of colorization results from the training:
 
-![Training Results](Ref\sample.png)
+![Training Results](Ref/sample.png)
 
 ## Future Improvements
 
